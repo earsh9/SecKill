@@ -151,4 +151,6 @@
 
 版本依赖、session跨域、自定义校验器和异常接收器其他问题解决详见：<https://blog.csdn.net/weixin_45401187/article/details/125946288>
 
+数据库备份指令：
 
+`/usr/bin/mysqldump -uroot -pabc123 --databases SecKill > ~/Downloads/SecKill.sql`
