@@ -153,6 +153,8 @@
 
 - 数据库数据迁移指令：
 
-  1、备份数据库生成sql文件：`/usr/bin/mysqldump -uroot -pxxxxxx --databases SecKill > ~/Downloads/SecKill.sql`
+  1、备份数据库生成sql文件：`/usr/bin/mysqldump -uroot -proot --databases SecKill > ~/Downloads/SecKill.sql`
   
   2、将sql文件从本机传输到服务器：`scp ~/Downloads/SecKill.sql root@xx.xxx.xxx://temp/`
+  
+  3、在服务器中执行一遍sql文件：`mysql -uroot -proot < //tmp/SecKill.sql`
