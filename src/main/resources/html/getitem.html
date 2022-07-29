@@ -150,6 +150,9 @@
             $("#promoPrice").text(g_itemVO.promoPrice);
             $("#createOrder").attr("disabled", false);              //有秒杀活动时，下单按钮起效
             $("#normalPriceContainer").hide();                      //隐藏平常售卖的价格，只显示秒杀价格
+        }else{
+            //没有秒杀活动，不显示秒杀模块
+            $("#promoPriceContainer").hide();
         }
     }
     //从路径中获取信息：id
